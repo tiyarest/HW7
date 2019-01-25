@@ -16,11 +16,12 @@
 
 延时拍摄+开启闪光灯  
 
-''' findViewById(R.id.btn_picture).setOnClickListener(v -> {
+        findViewById(R.id.btn_picture).setOnClickListener(v -> {
             //todo 拍一张照片
             new Thread(new ThreadShow()).start();
         });
-class ThreadShow implements Runnable {
+        
+ class ThreadShow implements Runnable {
 
         @Override
         public void run() {
@@ -38,7 +39,7 @@ class ThreadShow implements Runnable {
 
         }
     }
-    '''
+
 
 
 
